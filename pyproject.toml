@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docdiff"
+version = "0.1.0"
+description = "Local docs diff against snapshots — added/removed/renamed detection for Markdown/HTML docs trees."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["docs", "diff", "snapshot", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+docdiff = "docdiff.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["docdiff", "docdiff.*"]
