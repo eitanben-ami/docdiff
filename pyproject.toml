@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "docdiff"
 version = "0.1.0"
-description = "Local docs diff against snapshots — added/removed/renamed detection for Markdown/HTML docs trees."
+description = "Local docs diff against snapshots — added/removed/modified detection for Markdown/HTML docs trees."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -21,6 +21,9 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Topic :: Software Development :: Quality Assurance",
 ]
+
+[project.urls]
+Repository = "https://github.com/eitanben-ami/docdiff"
 
 [project.scripts]
 docdiff = "docdiff.cli:main"

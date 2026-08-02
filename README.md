@@ -1,6 +1,8 @@
 # docdiff
 
-Docs diff against snapshots — added, removed, renamed, and modified detection for Markdown/HTML docs trees.
+Docs diff against snapshots — added, removed, and modified detection for Markdown/HTML docs trees.
+
+Repository: https://github.com/eitanben-ami/docdiff
 
 ## About
 
