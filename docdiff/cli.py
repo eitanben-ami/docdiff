@@ -57,8 +57,3 @@ def main(argv: list[str] | None = None) -> int:
 
     return 0
 
-
-from docdiff.core import DocDiff  # noqa: E402
-
-if __name__ == "__main__":
-    raise SystemExit(main())
